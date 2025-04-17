@@ -10,7 +10,9 @@
     "build": "wireit",
     "changeset": "changeset",
     "version": "npm run changeset version ",
-    "release": "npm run build && npm run changeset publish"
+    "release": "npm run build && npm run changeset publish",
+    "build-state": "npm --prefix ./packages/state run build",
+    "publish-state": "npm --prefix ./packages/state run publish"
   },
   "keywords": [
     "lit",
@@ -88,5 +90,6 @@
       "@vaadin/vaadin-material-styles": "link:../app-dependencies/web-components/packages/vaadin-material-styles",
       "@vaadin/vaadin-themable-mixin": "link:../app-dependencies/web-components/packages/vaadin-themable-mixin"
     }
-  }
+  },
+  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b"
 }
